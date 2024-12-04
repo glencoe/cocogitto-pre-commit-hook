@@ -17,7 +17,7 @@
     language: rust
     types: [text]
     stages: [pre-push]
-    args: [HEAD...origin/HEAD]
+    args: [HEAD..origin/HEAD]
     pass_filenames: false
     require_serial: false
     additional_dependencies: ["cli:cocogitto:6.2.0"]
