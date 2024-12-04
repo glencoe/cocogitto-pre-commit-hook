@@ -9,3 +9,15 @@
     require_serial: false
     additional_dependencies: ["cli:cocogitto:6.2.0"]
     minimum_pre_commit_version: '0'
+
+-   id: cocogitto-branch
+    name: cocogitto-branch
+    description: 'protect remote branch prior push'
+    entry: cog check
+    language: rust
+    type: [text]
+    stages: [pre-push]
+    args: [HEAD...origin/HEAD]
+    require_serial: false
+    additional_dependencies: ["cli:cocogitto:6.2.0"]
+    minimum_pre_commit_version: '0'
