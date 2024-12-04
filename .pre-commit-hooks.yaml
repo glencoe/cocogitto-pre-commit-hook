@@ -3,9 +3,9 @@
     description: 'lint commit messsages with cocogitto'
     entry: cog verify
     language: rust
-    types: [text]
+    types: [file]
     stages: [commit-msg]
-    args: []
+    args: [--file]
     require_serial: false
     additional_dependencies: ["cli:cocogitto:6.2.0"]
     minimum_pre_commit_version: '0'
