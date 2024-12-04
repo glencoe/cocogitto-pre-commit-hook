@@ -1,0 +1,7 @@
+- id: cocogitto
+  name: cocogitto commit lint
+  language: rust
+  additional_dependencies: cli:cocogitto:6.2.0
+  entry: cog check
+  description: "use cocogitto to lint your commit message"
+  stages: [commit-msg]
