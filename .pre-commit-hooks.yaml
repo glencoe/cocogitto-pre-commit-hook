@@ -15,7 +15,7 @@
     description: 'protect remote branch prior push'
     entry: cog check
     language: rust
-    type: [text]
+    types: [text]
     stages: [pre-push]
     args: [HEAD...origin/HEAD]
     require_serial: false
